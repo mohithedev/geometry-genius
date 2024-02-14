@@ -65,7 +65,52 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- parallelogram card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/parallelogram.png" alt="parallelogram" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-3xl">Parallelogram</h2>
+                        <p class="text-2xl">Area (A) = b x h</p>
+                        <div>
+                            <!-- rectangle width -->
+                            <input id="parallelogram-base" class="w-24 text-2xl p-1 rounded-sm" type="text"
+                                placeholder="b">
+                            <span class="ml-2 mr-4">cm</span>
+                            <!-- rectangle height -->
+                            <input id="parallelogram-height" class="w-24 text-2xl p-1 rounded-sm" type="text"
+                                placeholder="h">
+                            <span class="ml-2 mr-4">cm</span>
+                        </div>
+                        <div>
+                            <p>Area: <span id="parallelogramArea"></span> <span>cm</span><sup>2</sup></p>
+                        </div>
+                        <div class="card-actions">
+                            <button onclick="parallelogramAreaCalculator()"
+                                class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/rhombus.png" alt="rhombus" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-3xl">Rhombus</h2>
+                        <p class="text-2xl">Area (A) = 0.5 x d1 x d2</p>
+                        <div>
+                            <!-- rhombus d1 -->
+                            <input id="rhombus-d1" type="text" class="w-24 text-2xl p-1 rounded-sm" placeholder="d1">
+                            <span class="mr-4 ml-2">cm</span>
+                            <!-- rhombus d2 -->
+                            <input id="rhombus-d2" type="text" class="w-24 text-2xl p-1 rounded-sm" placeholder="d2">
+                            <span class="mr-4 ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p>Area: <span id="rhombusArea"></span> <span>cm</span></p>
+                        </div>
+                        <div class="card-actions">
+                            <button onclick="rhombusAreaCalculator()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- area calculation container -->
             <div class="w-96 border-2 border-gray-700 rounded-lg">
@@ -75,6 +120,7 @@
     </main>
 
     <script src="script/traingle.js"></script>
+    <script src="script/reusableFunc.js"></script>
 </body>
 
 </html>
